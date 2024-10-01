@@ -137,22 +137,30 @@ I created a report in Power BI to showcase the results of the analysis.
 _Overview_ describes the high-level metrics about attrition at the company, including total, active and inactive employees, active employees by department and role, attrition rate, and employee hiring trend by year.
 ![overview](https://github.com/user-attachments/assets/412efe7f-5a8c-42bc-9355-c76717d15257)
 
-
 <br/> _Demographics_ include plots and metrics related to the demographics, diversity and inclusion of employees
 ![demographics](https://github.com/user-attachments/assets/4277dd2e-42fc-4204-b166-aca2dae62712)
 
-
 <br/> _Performance tracker_ is a page to visualise individual employee's performance scores based on yearly performance reviews, 
-![performance-tracker](https://github.com/user-attachments/assets/1b6bf4df-e13f-43b6-b6fc-2383f6cd410f)
-
+![performance-tracker](https://github.com/user-attachments/assets/e04c65b2-80fa-4895-a99d-75b5199c69af)
 
 <br/> _Attrition_ displays more in-depth plots related to the attrition rate for the company.
 ![attrition](https://github.com/user-attachments/assets/021ec719-3e66-4ebd-955a-c9354269a3d4)
 
 
 ### Results and Implications
+#### Overview 
 - Atlas Labs has a total of 1470 employees, but only 1233 are active employees.
 - The attrition rate of Atlas Lab is 16.1%. According to [Onsight Global](https://insightglobal.com/blog/employee-attrition-rate-how-to-calculate-improve/), while it is difficult to define a “good” attrition rate, businesses should generally aim for an attrition rate of 10% or lower. Therefore, it is Atlas Labs should look for strategies to reduce their attrityion rate below 10%
 - The hiring trend over time remains stable, between 2012 and 2022, Atlas Labs hired 90 to 130 employees.
 - The deparment with the largest number of employees is Technology with 828 employees, followed by Sles with 354, and Human Resoruces with 51.
--  
+
+#### Demographics
+- The youngest employee is 18 years old, whereas the oldest is 51.
+- Most employees (874) has between 20 to 29 years old.
+- Most employees are married (42.5%), followed by single (37.3%), and divorced (20.2%).
+- Atlas Labs has more female than male employees.
+- The majority of Atlas Labs employees identify as White, and they have the higher salaries among all ethhic groups within the company.
+
+#### Performance tracker
+- We can 
+- Most employees (874) 
