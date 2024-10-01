@@ -37,7 +37,7 @@ By analysing various employee and company data points, I was able to uncover sig
 
 - The majority of employees are between 20 and 29 years old, and currently the company, Atlas Labs, employs 2.7% more women than men, with a total of 1233 active employees.
 - Employees who identify as non-binary make up 8.5% of total employees.
-- Employees who identify as white have the highest average salary, whereas mixed or multiple ethnic groups have one pf the lowest average salaries. 
+- Employees who identify as white have the highest average salary, whereas mixed or multiple ethnic groups have one of the lowest average salaries. 
 - The attrition rate is 16.1% and the department and job role with the highest attrition rate is Sales and Sales Representative, respectively.
 - Departmental disparities: Sale consistently experienced higher turnover rates than other departments.
 - Managerial rating level and self-performance level do not always align. 
