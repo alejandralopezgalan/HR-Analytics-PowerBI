@@ -2,7 +2,10 @@
 
 **A guided project from DataCamp´s career track: [Data Analyst in Power BI](https://app.datacamp.com/learn/career-tracks/data-analyst-in-power-bi)**
 
+
 ![HR](https://github.com/user-attachments/assets/429b7a45-d183-40f9-8207-8caa972cafee)
+
+Image from [Freepik](https://www.freepik.com/search?format=search&last_filter=query&last_value=HR&query=HR)
 
 
 ---
@@ -63,7 +66,7 @@ Atlas Labs is a fictitious software company that is concerned about their employ
 - Understand Attrition Factors: Identify the primary factors contributing to employee turnover, including job satisfaction, compensation, management style, and work-life balance.
 
 ### Data Source
-Data was taken from [DataCamp website](https://app.datacamp.com/learn/courses/case-study-hr-analytics-in-power-bi). It consisted of employee data such as information on demographics, tenure, salary, and performance reviews from .
+Data was taken from [DataCamp website](https://app.datacamp.com/learn/courses/case-study-hr-analytics-in-power-bi). It consisted of employee data such as information on demographics, tenure, salary, and performance reviews from 1470 employees.
 
 ### Tools and Techniques
 Power BI and DAX, Data Modelling, and Exploratory Data Analysis (EDA).
@@ -147,5 +150,9 @@ _Overview_ describes the high-level metrics about attrition at the company, incl
 ![attrition](https://github.com/user-attachments/assets/021ec719-3e66-4ebd-955a-c9354269a3d4)
 
 
-## Results and Implications
-Present the insights and conclusions drawn from the data analysis.
+### Results and Implications
+- Atlas Labs has a total of 1470 employees, but only 1233 are active employees.
+- The attrition rate of Atlas Lab is 16.1%. According to [Onsight Global](https://insightglobal.com/blog/employee-attrition-rate-how-to-calculate-improve/), while it is difficult to define a “good” attrition rate, businesses should generally aim for an attrition rate of 10% or lower. Therefore, it is Atlas Labs should look for strategies to reduce their attrityion rate below 10%
+- The hiring trend over time remains stable, between 2012 and 2022, Atlas Labs hired 90 to 130 employees.
+- The deparment with the largest number of employees is Technology with 828 employees, followed by Sles with 354, and Human Resoruces with 51.
+-  
