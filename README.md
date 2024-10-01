@@ -63,7 +63,7 @@ Atlas Labs is a fictitious software company that is concerned about their employ
 - Understand Attrition Factors: Identify the primary factors contributing to employee turnover, including job satisfaction, compensation, management style, and work-life balance.
 
 ### Data Source
-Data was taken from [DataCamp website](https://app.datacamp.com/learn/courses/case-study-hr-analytics-in-power-bi). It consisted of employee data such as information on demographics, tenure, salary, and performance reviews.
+Data was taken from [DataCamp website](https://app.datacamp.com/learn/courses/case-study-hr-analytics-in-power-bi). It consisted of employee data such as information on demographics, tenure, salary, and performance reviews from .
 
 ### Tools and Techniques
 Power BI and DAX, Data Modelling, and Exploratory Data Analysis (EDA).
@@ -132,16 +132,19 @@ Some of the metrics and KPIs I used for this analysis were:
 I created a report in Power BI to showcase the results of the analysis. 
 
 _Overview_ describes the high-level metrics about attrition at the company, including total, active and inactive employees, active employees by department and role, attrition rate, and employee hiring trend by year.
-![Overview](https://github.com/user-attachments/assets/5cd0bcb8-c753-4286-8b21-8b6eb68860dd)
+![overview](https://github.com/user-attachments/assets/412efe7f-5a8c-42bc-9355-c76717d15257)
+
 
 <br/> _Demographics_ include plots and metrics related to the demographics, diversity and inclusion of employees
-![Demographics](https://github.com/user-attachments/assets/1bbc7dfd-0359-4d4f-8e1f-dbd19297ff1e)
+![demographics](https://github.com/user-attachments/assets/4277dd2e-42fc-4204-b166-aca2dae62712)
+
 
 <br/> _Performance tracker_ is a page to visualise individual employee's performance scores based on yearly performance reviews, 
-![Performance](https://github.com/user-attachments/assets/5723e828-13c9-404d-8460-eff249fc9083)
+![performance-tracker](https://github.com/user-attachments/assets/1b6bf4df-e13f-43b6-b6fc-2383f6cd410f)
+
 
 <br/> _Attrition_ displays more in-depth plots related to the attrition rate for the company.
-![image](https://github.com/user-attachments/assets/8c3d8dad-5745-4be2-9765-e7775049ef00)
+![attrition](https://github.com/user-attachments/assets/021ec719-3e66-4ebd-955a-c9354269a3d4)
 
 
 ## Results and Implications
