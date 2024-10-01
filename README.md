@@ -162,5 +162,11 @@ _Overview_ describes the high-level metrics about attrition at the company, incl
 - The majority of Atlas Labs employees identify as White, and they have the higher salaries among all ethhic groups within the company.
 
 #### Performance tracker
-- We can 
-- Most employees (874) 
+- This page in the report allow us to track individual employee scores in Job, Environment, Relationship and Work Life Balance Satisfaction by Year, as well the Manager and Self Rating by Year. We can see that the managerial rating level and self-performance level don't always align.
+
+- #### Attrition
+- Sales is the department with the higher attrition rate, and the job role with the highest attrition rate is Sales Represesentative.
+- 2020 was the year with the highest attrition rate (22.0%).
+- Frequent travelers, and overtime workers are most likely to quit, as they have the highest attrition rate.
+- Similarly, new employees or employees with less than 2 years of tenure had the highest rate amongs all employees.
+
