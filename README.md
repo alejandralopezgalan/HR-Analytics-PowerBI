@@ -3,7 +3,7 @@
 **A guided project from DataCamp´s career track: [Data Analyst in Power BI](https://app.datacamp.com/learn/career-tracks/data-analyst-in-power-bi)**
 
 
-![HR](https://github.com/user-attachments/assets/429b7a45-d183-40f9-8207-8caa972cafee)
+![HR](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-HRportada.png)
 
 Image from [Freepik](https://www.freepik.com/search?format=search&last_filter=query&last_value=HR&query=HR)
 
@@ -79,17 +79,17 @@ I initiated a new Power BI report and imported the five CSV datasets. To clarify
 ### Data Transformation
 I created a new date calculated table using the DAX code from [DimDate.txt](DimDate.txt) file.
 
-![Renaming the columns](https://github.com/user-attachments/assets/02f48e75-bc60-4993-9c19-d1053a691830)
+![Renaming the columns](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-rename-columns.png)
 
 
 <br/>Once the data was loaded and cleaned, I generated a data model to establish the relatioships between tables. This image shows the initial data model.
 
-![Initial model](https://github.com/user-attachments/assets/04fbeee3-acca-46d0-bb47-e3673feb7366)
+![Initial model](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-initial-model.png)
 
 
 <br/>This image shows the final data model used for the analysis.
 
-![The final model ](https://github.com/user-attachments/assets/cdd1d69a-a91d-40c3-a34c-f40762366476)
+![The final model](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-model-hr-powerbi.png)
 
 ### DAX measures
 I created a table with all the measures required for the analysis, and I used DAX formulas to create these measures.
@@ -123,16 +123,16 @@ I created a table with all the measures required for the analysis, and I used DA
 I created a report in Power BI to showcase the results of the analysis. 
 
 _Overview_ describes the high-level metrics about attrition at the company, including total, active and inactive employees, active employees by department and role, attrition rate, and employee hiring trend by year.
-![overview](https://github.com/user-attachments/assets/412efe7f-5a8c-42bc-9355-c76717d15257)
+![overview](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-overview.png)
 
 <br/> _Demographics_ include plots and metrics related to the demographics, diversity and inclusion of employees
-![demographics](https://github.com/user-attachments/assets/4277dd2e-42fc-4204-b166-aca2dae62712)
+![demographics](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-demographics.png)
 
 <br/> _Performance tracker_ is a page to visualise individual employee's performance scores based on yearly performance reviews, 
-![performance-tracker](https://github.com/user-attachments/assets/e04c65b2-80fa-4895-a99d-75b5199c69af)
+![performance-tracker](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-performance.png)
 
 <br/> _Attrition_ displays more in-depth plots related to the attrition rate for the company.
-![attrition](https://github.com/user-attachments/assets/021ec719-3e66-4ebd-955a-c9354269a3d4)
+![attrition](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-attrition.png)
 
 ---
 
