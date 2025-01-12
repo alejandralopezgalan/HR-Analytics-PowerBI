@@ -152,8 +152,15 @@ The interactive features of the Demographics dashboard enable users to delve int
 
 ![demographics_gif](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/video/project1_demographics_video.gif)
 
-<br/> _Performance tracker_ is a page to visualise individual employee's performance scores based on yearly performance reviews, 
+<br/> _Performance Tracker_ is a page designed to visualise individual employee performance scores based on yearly performance reviews. The dashboard includes various elements such as:
+- KPIs: Key Performance Indicators of individual scores on different criteria such as job satisfaction, environment satisfaction, relationships satisfaction, and work-life balance across multiple years.
+- Review Records: Individual records of the start date (when the employee started working at the company), the date of the last review, and the due date for the next review.
+- Comparison Charts: Visual comparisons of self-performance metrics and those by their management.
+
 ![performance-tracker](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-performance.png)
+
+Users can select an individual employee to view their specific performance scores and review records in detail.
+![performance-gif](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/video/project1_performance_video.gif)
 
 <br/> _Attrition_ displays more in-depth plots related to the attrition rate for the company.
 ![attrition](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-attrition.png)
