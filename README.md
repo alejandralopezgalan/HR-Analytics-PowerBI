@@ -131,8 +131,7 @@ _Overview_ provides a high-level summary of key metrics related to attrition at 
   
 ![overview](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-overview.png)
 
-This GIF demonstrates the interactive elements of the Overview page in my Power BI report. It highlights how users can explore various metrics and trends related to employee attrition, such as:
-Viewing the total number of employees and their status (active/inactive), Exploring the distribution of employees by department and role, and analysing the attrition rate and observing hiring trends over the years.
+The interactive elements of the Overview page in my Power BI report allow users to explore various metrics and trends related to employee attrition, such as: viewing the total number of employees and their status (active/inactive), exploring the distribution of employees by department and role, and analysing the attrition rate and observing hiring trends over the years.
 
 ![overview_gif](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/video/project1_attrition_video.gif)
 
@@ -142,10 +141,12 @@ Viewing the total number of employees and their status (active/inactive), Explor
 - Marital Status: The largest group is single (624 employees, 42.45% of the total).
 - Gender Distribution: The majority are females between 30 and 39 years old.
 - Ethnicity: The highest number of employees are white, with an average salary around $110K.
+  
 ![demographics](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-demographics.png)
 
-The interactive elements of the Demographics dashboard allow users to explore various demographic metrics and visualise employee data in detail.
+The interactive features of the Demographics dashboard enable users to delve into various demographic metrics and gain detailed insights into employee data.
 
+![demographics_gif](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/video/project1_demographics_video.gif)
 
 <br/> _Performance tracker_ is a page to visualise individual employee's performance scores based on yearly performance reviews, 
 ![performance-tracker](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-performance.png)
