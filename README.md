@@ -18,16 +18,20 @@ Image from [Freepik](https://www.freepik.com/search?format=search&last_filter=qu
 - [Introduction](#introduction)
   - [Business Problem](#business-problem)
   - [Goals](#goals)
- - [Methodology](#methodology)
-   - [Data Source](#data-source)
-    - [Tools and Techniques](#tools-and-techniques)
-    - [Data Understanding](#data-understanding)
-    - [Data Cleaning](#data-cleaning)
-    - [Data Transformation](#data-transformation)
-    - [DAX measures](#dax-measures)
-    - [Data Analysis](#data-analysis)
-    - [Data Visualisation](#data-visualisation)
+- [Methodology](#methodology)
+  - [Data Source](#data-source)
+  - [Tools and Techniques](#tools-and-techniques)
+  - [Data Understanding](#data-understanding)
+  - [Data Cleaning](#data-cleaning)
+  - [Data Transformation](#data-transformation)
+  - [DAX measures](#dax-measures)
+  - [Data Analysis](#data-analysis)
+  - [Data Visualisation](#data-visualisation)
 - [Results and Implications](#results-and-implications)
+  - [Demographics](#demographics)
+  - [Attrition](#attrition)
+  - [Performance](#performance)
+  - [Implications](#implications)
 
 
 ---
@@ -114,12 +118,12 @@ I created a table with all the measures required for the analysis, and I used DA
 | `Inactive_Employees_Date` | Quantifies the number of inactive employees by date | `Inactive_Employees_Date = CALCULATE( [InactiveEmployees], USERELATIONSHIP ( DimDate[Date], DimEmployee[HireDate] ))` |
 | `% Attrition Rate Date` | Calculates the rates of attrition base on inactive employees by date | `% Attrition Rate Date = DIVIDE([Inactive_Employees_Date], [TotalEmployeesDate])` |
 
-#### Data Analysis
+### Data Analysis
 - Exploratory Data Analysis (EDA): I used descriptive statistics and data visualisation to identify trends and patterns in the data.
 - Key Metrics: Employee satisfaction, turnover rates, diversity indexes, and hiring trends were analysed.
 
 
-#### Data Visualisation
+### Data Visualisation
 I created a report in Power BI to showcase the results of the analysis. 
 
 _Overview_ provides a high-level summary of key metrics related to attrition at the company, including: 
@@ -156,21 +160,21 @@ The interactive features of the Demographics dashboard enable users to delve int
 
 ---
 
-### Results and Implications
-#### Demographics
+## Results and Implications
+### Demographics
 - The workforce is relatively young, with a majority of employees aged 20-29.
 - While there is a gender imbalance, the company has a diverse workforce in terms of ethnicity.
 - Employees who identify as white have the highest average salary, whereas mixed or multiple ethnic groups have one of the lowest average salaries
 
-#### Attrition:
+### Attrition:
 - The overall attrition rate of 16.1% is higher than industry benchmarks ([Onsight Global](https://insightglobal.com/blog/employee-attrition-rate-how-to-calculate-improve/)).
 - Sales and Sales Representative roles have significantly higher turnover rates, indicating potential issues with job satisfaction, work-life balance, or management.
 - Frequent travelers and overtime workers are most likely to resign, as they have the highest attrition rate.
 
-#### Performance:
+### Performance:
 - A discrepancy between managerial ratings and self-performance ratings suggests potential misalignment in expectations or performance evaluation processes.
 
-#### Implications:
+### Implications:
 - High turnover rates can lead to increased costs, decreased productivity, and a negative impact on company culture.
 - Addressing the root causes of attrition is essential for improving retention and creating a positive work environment.
 
