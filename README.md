@@ -137,7 +137,7 @@ _Overview_ provides a high-level summary of key metrics related to attrition at 
 
 The interactive elements of the Overview page in my Power BI report allow users to explore various metrics and trends related to employee attrition, such as: viewing the total number of employees and their status (active/inactive), exploring the distribution of employees by department and role, and analysing the attrition rate and observing hiring trends over the years.
 
-![overview_gif](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/video/project1_attrition_video.gif)
+![overview_gif](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/video/project1_overview_video.gif)
 
 
 <br/> _Demographics_ page includes key statistics such as:
@@ -160,10 +160,22 @@ The interactive features of the Demographics dashboard enable users to delve int
 ![performance-tracker](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-performance.png)
 
 Users can select an individual employee to view their specific performance scores and review records in detail.
+
 ![performance-gif](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/video/project1_performance_video.gif)
 
-<br/> _Attrition_ displays more in-depth plots related to the attrition rate for the company.
+<br/> _Attrition_ is a page that displays in-depth plots related to the company's attrition rate. The dashboard includes various elements such as:
+- Overall Attrition Rate: The overall percentage of employees leaving the company (16.1%).
+- Department and Job Role: Attrition rates segmented by different departments and job roles. The highest is Sales Representatives with 39.8%.
+- Travel Frequency: Attrition rates based on employees' travel frequency. The highest are frequent travellers with 24.9%.
+- Overtime Requirement: Attrition rates correlated with overtime work requirements. The highest (30.5%) for those with overtime requirements.
+- Attrition by Hire Date: Analysis of attrition rates by employee hire dates. 2020 was the year with the highest rate (22.0%).
+- Tenure: Breakdown of attrition rates based on employees' length of tenure at the company. The majority are employees with less than two years of tenure.
+
 ![attrition](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-attrition.png)
+
+Users can interact with the dashboard to explore these metrics and gain detailed insights into employee turnover.
+
+![attrition_gif](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/video/project1_attrition_video.gif)
 
 ---
 
