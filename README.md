@@ -122,8 +122,20 @@ I created a table with all the measures required for the analysis, and I used DA
 #### Data Visualisation
 I created a report in Power BI to showcase the results of the analysis. 
 
-_Overview_ describes the high-level metrics about attrition at the company, including total, active and inactive employees, active employees by department and role, attrition rate, and employee hiring trend by year.
+_Overview_ provides a high-level summary of key metrics related to attrition at the company, including: 
+- Total Employees: The overall number of employees.
+- Active and Inactive Employees: Breakdown of currently active and inactive employees.
+- Employees by Department and Role: Distribution of active employees across different departments and roles.
+- Attrition Rate: The percentage of employees leaving the company over a specific period.
+- Hiring Trend by Year: The trend of employee hiring over the past years.
+- 
 ![overview](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-overview.png)
+
+This GIF demonstrates the interactive elements of the Overview page in my Power BI report. It highlights how users can explore various metrics and trends related to employee attrition, such as:
+Viewing the total number of employees and their status (active/inactive), Exploring the distribution of employees by department and role, and analysing the attrition rate and observing hiring trends over the years.
+
+![overview_gif](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/video/project1_attrition_video.gif)
+
 
 <br/> _Demographics_ include plots and metrics related to the demographics, diversity and inclusion of employees
 ![demographics](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-demographics.png)
