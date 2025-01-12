@@ -33,7 +33,7 @@ Image from [Freepik](https://www.freepik.com/search?format=search&last_filter=qu
 ---
 ## Executive Summary
 ### Primary Goal
-To analyse HR metrics and employee performance to identify attrition drivers.
+To analyse Human Resources (HR) metrics and employee performance to identify attrition drivers.
 
 ### Key Findings
 - __Demographics:__ The majority of employees are between 20 and 29 years old, with a slightly higher proportion (2.7%) of women than men.
@@ -123,12 +123,12 @@ I created a table with all the measures required for the analysis, and I used DA
 I created a report in Power BI to showcase the results of the analysis. 
 
 _Overview_ provides a high-level summary of key metrics related to attrition at the company, including: 
-- Total Employees: The overall number of employees.
-- Active and Inactive Employees: Breakdown of currently active and inactive employees.
-- Employees by Department and Role: Distribution of active employees across different departments and roles.
-- Attrition Rate: The percentage of employees leaving the company over a specific period.
-- Hiring Trend by Year: The trend of employee hiring over the past years.
-- 
+- Total Employees: The overall number of employees (1470).
+- Active and Inactive Employees: Breakdown of currently active (1233) and inactive employees (237).
+- Employees by Department and Role: Distribution of active employees across different departments (Technology, Sales and HR) and roles.
+- Attrition Rate: The percentage of employees leaving the company over a specific period (actual 16.1%).
+- Hiring Trend by Year: The trend of employee hiring over the past years (2012 to 2022).
+  
 ![overview](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-overview.png)
 
 This GIF demonstrates the interactive elements of the Overview page in my Power BI report. It highlights how users can explore various metrics and trends related to employee attrition, such as:
@@ -137,8 +137,15 @@ Viewing the total number of employees and their status (active/inactive), Explor
 ![overview_gif](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/video/project1_attrition_video.gif)
 
 
-<br/> _Demographics_ include plots and metrics related to the demographics, diversity and inclusion of employees
+<br/> _Demographics_ page includes key statistics such as:
+- Age Distribution: Ranges from 18 to 51 years old, with the majority being 20-29 years old (874 employees).
+- Marital Status: The largest group is single (624 employees, 42.45% of the total).
+- Gender Distribution: The majority are females between 30 and 39 years old.
+- Ethnicity: The highest number of employees are white, with an average salary around $110K.
 ![demographics](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-demographics.png)
+
+The interactive elements of the Demographics dashboard allow users to explore various demographic metrics and visualise employee data in detail.
+
 
 <br/> _Performance tracker_ is a page to visualise individual employee's performance scores based on yearly performance reviews, 
 ![performance-tracker](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-performance.png)
