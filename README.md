@@ -75,10 +75,10 @@ The analysis is based on HR data from Atlas Labs, covering demographics, tenure,
 Power BI, DAX functions, Data Modelling, and Exploratory Data Analysis (EDA).
 
 ### Data Understanding
-Atlas Labs is a fictitious software company. To perform the analysis I used HR records that consisted of five tables:  `EducationLevel`, `Employee`, `RatingLevel`, `SatisfiedLevel`, and `PerformanceRating`. For more details of each dataset review the [Metadata page](assets/datasets/metadata.md).
+Atlas Labs is a fictitious software company. To perform the analysis I used HR records that consisted of five tables:  `EducationLevel`, `Employee`, `RatingLevel`, `SatisfiedLevel`, and `PerformanceRating`. For more details of each dataset review the [Metadata](assets/datasets/metadata.md) page.
 
 ### Data Cleaning
-I initiated a new Power BI report and imported the five CSV datasets. To clarify the table roles, I prepended 'Fact' or 'Dim' to each table name, designating them as either fact or dimension tables. Next, I ensured that the columns were correctly formatted following the [Metadata information](assets/datasets/metadata.md). 
+I initiated a new Power BI report and imported the five CSV datasets. To clarify the table roles, I prepended 'Fact' or 'Dim' to each table name, designating them as either fact or dimension tables. Next, I ensured that the columns were correctly formatted following the [Metadata](assets/datasets/metadata.md) information. 
 
 ### Data Transformation
 I created a new date calculated table using the DAX code from [DimDate.txt](assets/datasets/DimDate.txt) file.
@@ -88,12 +88,12 @@ I created a new date calculated table using the DAX code from [DimDate.txt](asse
 
 <br/>Once the data was loaded and cleaned, I generated a data model to establish the relatioships between tables. This image shows the initial data model.
 
-![Initial model](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-initial-model.png)
+![Initial model](assets/img/project1-initial-model.png)
 
 
 <br/>This image shows the final data model used for the analysis.
 
-![The final model](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-model-hr-powerbi.png)
+![The final model](assets/img/project1-model-hr-powerbi.png)
 
 ### DAX measures
 I created a table with all the measures required for the analysis, and I used DAX formulas to create these measures.
