@@ -32,6 +32,7 @@ Image from [Freepik](https://www.freepik.com/search?format=search&last_filter=qu
   - [Attrition](#attrition)
   - [Performance](#performance)
   - [Implications](#implications)
+- [Power BI File](#power-bi-file)
 
 
 ---
@@ -196,4 +197,9 @@ Users can interact with the dashboard to explore these metrics and gain detailed
 ### Implications:
 - High turnover rates can lead to increased costs, decreased productivity, and a negative impact on company culture.
 - Addressing the root causes of attrition is essential for improving retention and creating a positive work environment.
+
+---
+
+## PowerBi File
+If you want to review the detailed analysis, you can download the Power BI file from [here](assets/report/Report-HR-analytics-in-PowerBI.pbix)
 
