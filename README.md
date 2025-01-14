@@ -3,7 +3,7 @@
 **A guided project from DataCamp´s career track: [Data Analyst in Power BI](https://app.datacamp.com/learn/career-tracks/data-analyst-in-power-bi)**
 
 
-![HR](https://github.com/alejandralopezgalan/HR-Analytics-PowerBI/blob/main/assets/img/project1-HRportada.png)
+![HR](assets/img/project1-HRportada.png)
 
 Image from [Freepik](https://www.freepik.com/search?format=search&last_filter=query&last_value=HR&query=HR)
 
