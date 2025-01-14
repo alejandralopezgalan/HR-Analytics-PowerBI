@@ -78,10 +78,10 @@ Power BI, DAX functions, Data Modelling, and Exploratory Data Analysis (EDA).
 Atlas Labs is a fictitious software company. To perform the analysis I used HR records that consisted of five tables:  `EducationLevel`, `Employee`, `RatingLevel`, `SatisfiedLevel`, and `PerformanceRating`. For more details of each dataset review the [Metadata page](assets/datasets/metadata.md).
 
 ### Data Cleaning
-I initiated a new Power BI report and imported the five CSV datasets. To clarify the table roles, I prepended 'Fact' or 'Dim' to each table name, designating them as either fact or dimension tables. Next, I ensured that the columns were correctly formatted following the [Metadata information](https://github.com/alejandralopezgalan/HR-Analytics-PowerBI/blob/main/assets/datasets/metadata.md). 
+I initiated a new Power BI report and imported the five CSV datasets. To clarify the table roles, I prepended 'Fact' or 'Dim' to each table name, designating them as either fact or dimension tables. Next, I ensured that the columns were correctly formatted following the [Metadata information](assets/datasets/metadata.md). 
 
 ### Data Transformation
-I created a new date calculated table using the DAX code from [DimDate.txt](DimDate.txt) file.
+I created a new date calculated table using the DAX code from [DimDate.txt](assets/datasets/DimDate.txt) file.
 
 ![Renaming the columns](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-rename-columns.png)
 
