@@ -3,7 +3,7 @@
 **A guided project from DataCamp´s career track: [Data Analyst in Power BI](https://app.datacamp.com/learn/career-tracks/data-analyst-in-power-bi)**
 
 
-![HR](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-HRportada.png)
+![HR](https://github.com/alejandralopezgalan/HR-Analytics-PowerBI/blob/main/assets/img/project1-HRportada.png)
 
 Image from [Freepik](https://www.freepik.com/search?format=search&last_filter=query&last_value=HR&query=HR)
 
@@ -75,10 +75,10 @@ The analysis is based on HR data from Atlas Labs, covering demographics, tenure,
 Power BI, DAX functions, Data Modelling, and Exploratory Data Analysis (EDA).
 
 ### Data Understanding
-Atlas Labs is a fictitious software company. To perform the analysis I used HR records that consisted of five tables:  `EducationLevel`, `Employee`, `RatingLevel`, `SatisfiedLevel`, and `PerformanceRating`. For more details of each dataset review the [Metadata page](metadata.md).
+Atlas Labs is a fictitious software company. To perform the analysis I used HR records that consisted of five tables:  `EducationLevel`, `Employee`, `RatingLevel`, `SatisfiedLevel`, and `PerformanceRating`. For more details of each dataset review the [Metadata page](assets/datasets/metadata.md).
 
 ### Data Cleaning
-I initiated a new Power BI report and imported the five CSV datasets. To clarify the table roles, I prepended 'Fact' or 'Dim' to each table name, designating them as either fact or dimension tables. Next, I ensured that the columns were correctly formatted following the [Metadata information](metadata.md). 
+I initiated a new Power BI report and imported the five CSV datasets. To clarify the table roles, I prepended 'Fact' or 'Dim' to each table name, designating them as either fact or dimension tables. Next, I ensured that the columns were correctly formatted following the [Metadata information](https://github.com/alejandralopezgalan/HR-Analytics-PowerBI/blob/main/assets/datasets/metadata.md). 
 
 ### Data Transformation
 I created a new date calculated table using the DAX code from [DimDate.txt](DimDate.txt) file.
