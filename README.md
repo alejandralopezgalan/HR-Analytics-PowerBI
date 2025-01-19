@@ -97,7 +97,7 @@ I created a new calculated date table using the DAX code from the [DimDate.txt](
 ![The final model](assets/img/project1-model-hr-powerbi.png)
 
 ### DAX measures
-I created a table with all the measures required for the analysis, and I used DAX formulas to create these measures.
+Measures Table: I created a table containing all the necessary measures for the analysis, utilising DAX formulas to generate these measures.
 
 | Measure | Description | DAX code |
 | :--- | --- | :--- |
