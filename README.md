@@ -81,7 +81,7 @@ tlas Labs is a fictitious software company. To perform the analysis, I used HR r
 ### Data Cleaning
 I initiated a new Power BI report and imported the five CSV datasets. To clarify the table roles, I prepended 'Fact' or 'Dim' to each table name, designating them as either fact or dimension tables. I then ensured that the columns were correctly formatted according to the [Metadata](assets/datasets/metadata.md) information. 
 
-### Data Transformation
+### Data Transformation and Modelling
 I created a new calculated date table using the DAX code from the [DimDate.txt](assets/datasets/DimDate.txt) file.
 
 ![Renaming the columns](assets/img/project1-rename-columns.png)
@@ -92,7 +92,7 @@ I created a new calculated date table using the DAX code from the [DimDate.txt](
 ![Initial model](assets/img/project1-initial-model.png)
 
 
-<br/>This image shows the final data model used for the analysis.
+<br/>Final data model: The image below illustrates the final data model used for the analysis.
 
 ![The final model](assets/img/project1-model-hr-powerbi.png)
 
