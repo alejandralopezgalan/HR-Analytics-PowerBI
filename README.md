@@ -121,17 +121,17 @@ Measures Table: I created a table containing all the necessary measures for the 
 
 ### Data Analysis
 - Exploratory Data Analysis (EDA): I used descriptive statistics and data visualisation to identify trends and patterns in the data.
-- Key Metrics: Employee satisfaction, turnover rates, diversity indexes, and hiring trends were analysed.
+- Key Metrics: Analysed employee satisfaction, turnover rates, diversity indexes, and hiring trends.
 
 
 ### Data Visualisation
-I created a report in Power BI to showcase the results of the analysis. 
+I created a report in Power BI to showcase the results of the analysis.
 
-_Overview_ provides a high-level summary of key metrics related to attrition at the company, including: 
+_Overview_ provides a high-level summary of key metrics related to attrition at the company, including:
 - Total Employees: The overall number of employees (1470).
 - Active and Inactive Employees: Breakdown of currently active (1233) and inactive employees (237).
-- Employees by Department and Role: Distribution of active employees across different departments (Technology, Sales and HR) and roles.
-- Attrition Rate: The percentage of employees leaving the company over a specific period (actual 16.1%).
+- Employees by Department and Role: Distribution of active employees across different departments (Technology, Sales, and HR) and roles.
+- Attrition Rate: The percentage of employees leaving the company over a specific period (16.1%).
 - Hiring Trend by Year: The trend of employee hiring over the past years (2012 to 2022).
   
 ![overview](assets/img/project1-overview.png)
