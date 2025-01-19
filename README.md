@@ -101,23 +101,23 @@ Measures Table: I created a table containing all the necessary measures for the 
 
 | Measure | Description | DAX code |
 | :--- | --- | :--- |
-| `TotalEmployees` | The total count of the employees in the company | `TotalEmployees = DISTINCTCOUNT(DimEmployee[EmployeeID])` |
-| `ActiveEmployees` | Active employees in the company | `ActiveEmployees = CALCULATE(COUNT(DimEmployee[EmployeeID]), FILTER(DimEmployee, DimEmployee[Attrition] = "No"))` |
-| `InactiveEmployees` | Employees that left the company | `InactiveEmployees = CALCULATE(COUNT(DimEmployee[EmployeeID]), FILTER(DimEmployee, DimEmployee[Attrition] = "Yes"))` |
-| `% Attrition Rate` | Percentage of Attrition Rate of the company | `% Attrition Rate = DIVIDE([InactiveEmployees], [TotalEmployees])` |
-| `TotalEmployeesDate` | Count of total employees by date | `TotalEmployeesDate = CALCULATE([TotalEmployees], USERELATIONSHIP(DimDate[Date], DimEmployee[HireDate]))` |
-| `AverageSalary` | Average salary for all employees | `AverageSalary = AVERAGE(DimEmployee[Salary])` |
-| `FullName` | To get the full name of each employee | `CONCATENATE(DimEmployee[FirstName], CONCATENATE(" ", DimEmployee[LastName]))` |
-| `LastReviewDate` | Displays the last performance review for the selected employee | `LastReviewDate = IF ( MAX ( FactPerformanceRating[ReviewDate] ) = BLANK(), "No Review Yet", MAX ( FactPerformanceRating[ReviewDate] ))` |
-| `NextReviewDate` | Calculates when the next performance is due. It should be 365 days after the `LastReviewDate` | `NextReviewDate = VAR review = IF ( MAX ( FactPerformanceRating[ReviewDate] ) = BLANK (), MAX ( DimEmployee[HireDate] ),  MAX ( FactPerformanceRating[ReviewDate] )) RETURN review + 365` |
-| `JobSatisfaction` | Gets the max level of employees' satisfaction with their job role. | `JobSatisfaction = MAX(FactPerformanceRating[JobSatisfaction])` |
-| `EnvironmentSatisfaction` | Calculates the max rating of employees' satisfaction with their environment | `EnvironmentSatisfaction = CALCULATE ( MAX ( FactPerformanceRating[EnvironmentSatisfaction] ), USERELATIONSHIP ( FactPerformanceRating[EnvironmentSatisfaction], DimSatisfiedLevel[SatisfactionID] ) )` |
-| `RelationshipSatisfaction` | Estimates the max level of employees' satisfaction with their relationships at work | `RelationshipSatisfaction = CALCULATE ( MAX (FactPerformanceRating[RelationshipSatisfaction] ), USERELATIONSHIP ( FactPerformanceRating[RelationshipSatisfaction] , DimSatisfiedLevel[SatisfactionID] ) )` |
-| `WorkLifeBalance` | Measures the max level of employees' satisfaction with their work-life balance | `WorkLifeBalance = CALCULATE ( MAX (FactPerformanceRating[WorkLifeBalance]), USERELATIONSHIP ( FactPerformanceRating[WorkLifeBalance], DimSatisfiedLevel[SatisfactionID] ) ` |
-| `Self_Rating` | Calculates the max rating of employees' performance based on their own view | `Self_Rating = CALCULATE ( MAX (FactPerformanceRating[SelfRating] ), USERELATIONSHIP ( FactPerformanceRating[SelfRating] , DimRatingLevel[RatingID] ))` |
-| `Manager_Rating` | Estimates the max rating of employees' performance based on their manager’s view | `Manager_Rating = CALCULATE ( MAX (FactPerformanceRating[ManagerRating]), USERELATIONSHIP ( FactPerformanceRating[ManagerRating] , DimRatingLevel[RatingID] ))` |
-| `Inactive_Employees_Date` | Quantifies the number of inactive employees by date | `Inactive_Employees_Date = CALCULATE( [InactiveEmployees], USERELATIONSHIP ( DimDate[Date], DimEmployee[HireDate] ))` |
-| `% Attrition Rate Date` | Calculates the rates of attrition base on inactive employees by date | `% Attrition Rate Date = DIVIDE([Inactive_Employees_Date], [TotalEmployeesDate])` |
+| `TotalEmployees` | Calculates the overall number of employees currently working at the company | `TotalEmployees = DISTINCTCOUNT(DimEmployee[EmployeeID])` |
+| `ActiveEmployees` | Shows the count of employees who are currently employed and active in the company | `ActiveEmployees = CALCULATE(COUNT(DimEmployee[EmployeeID]), FILTER(DimEmployee, DimEmployee[Attrition] = "No"))` |
+| `InactiveEmployees` | Counts the number of employees who have left the company | `InactiveEmployees = CALCULATE(COUNT(DimEmployee[EmployeeID]), FILTER(DimEmployee, DimEmployee[Attrition] = "Yes"))` |
+| `% Attrition Rate` | Calculates the percentage of employees who have left the company relative to the total number of employees | `% Attrition Rate = DIVIDE([InactiveEmployees], [TotalEmployees])` |
+| `TotalEmployeesDate` | Displays the total count of employees on specific dates | `TotalEmployeesDate = CALCULATE([TotalEmployees], USERELATIONSHIP(DimDate[Date], DimEmployee[HireDate]))` |
+| `AverageSalary` | Provides the average salary of all employees in the company | `AverageSalary = AVERAGE(DimEmployee[Salary])` |
+| `FullName` | Combines first names and last names to get the full name of each employee | `CONCATENATE(DimEmployee[FirstName], CONCATENATE(" ", DimEmployee[LastName]))` |
+| `LastReviewDate` | Displays the date of the most recent performance review for a selected employee | `LastReviewDate = IF ( MAX ( FactPerformanceRating[ReviewDate] ) = BLANK(), "No Review Yet", MAX ( FactPerformanceRating[ReviewDate] ))` |
+| `NextReviewDate` | Calculates the date for the next performance review, which should be 365 days after the `LastReviewDate` | `NextReviewDate = VAR review = IF ( MAX ( FactPerformanceRating[ReviewDate] ) = BLANK (), MAX ( DimEmployee[HireDate] ),  MAX ( FactPerformanceRating[ReviewDate] )) RETURN review + 365` |
+| `JobSatisfaction` | Shows the highest level of satisfaction employees have with their job roles | `JobSatisfaction = MAX(FactPerformanceRating[JobSatisfaction])` |
+| `EnvironmentSatisfaction` | Shows the highest rating of employees’ satisfaction with their work environment | `EnvironmentSatisfaction = CALCULATE ( MAX ( FactPerformanceRating[EnvironmentSatisfaction] ), USERELATIONSHIP ( FactPerformanceRating[EnvironmentSatisfaction], DimSatisfiedLevel[SatisfactionID] ) )` |
+| `RelationshipSatisfaction` | Estimates the highest level of satisfaction employees have with their relationships at work | `RelationshipSatisfaction = CALCULATE ( MAX (FactPerformanceRating[RelationshipSatisfaction] ), USERELATIONSHIP ( FactPerformanceRating[RelationshipSatisfaction] , DimSatisfiedLevel[SatisfactionID] ) )` |
+| `WorkLifeBalance` | Measures the highest level of satisfaction employees have with their work-life balance | `WorkLifeBalance = CALCULATE ( MAX (FactPerformanceRating[WorkLifeBalance]), USERELATIONSHIP ( FactPerformanceRating[WorkLifeBalance], DimSatisfiedLevel[SatisfactionID] ) ` |
+| `Self_Rating` | Calculates the highest rating of employee performance based on their own self-assessment | `Self_Rating = CALCULATE ( MAX (FactPerformanceRating[SelfRating] ), USERELATIONSHIP ( FactPerformanceRating[SelfRating] , DimRatingLevel[RatingID] ))` |
+| `Manager_Rating` | Calculates the highest rating of employee performance based on their manager’s assessment | `Manager_Rating = CALCULATE ( MAX (FactPerformanceRating[ManagerRating]), USERELATIONSHIP ( FactPerformanceRating[ManagerRating] , DimRatingLevel[RatingID] ))` |
+| `Inactive_Employees_Date` | Quantifies the number of inactive employees on specific dates | `Inactive_Employees_Date = CALCULATE( [InactiveEmployees], USERELATIONSHIP ( DimDate[Date], DimEmployee[HireDate] ))` |
+| `% Attrition Rate Date` | Calculates the attrition rates based on the number of inactive employees on specific dates | `% Attrition Rate Date = DIVIDE([Inactive_Employees_Date], [TotalEmployeesDate])` |
 
 ### Data Analysis
 - Exploratory Data Analysis (EDA): I used descriptive statistics and data visualisation to identify trends and patterns in the data.
