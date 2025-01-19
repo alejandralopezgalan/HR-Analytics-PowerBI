@@ -38,21 +38,21 @@ Image from [Freepik](https://www.freepik.com/search?format=search&last_filter=qu
 ---
 ## Executive Summary
 ### Primary Goal
-To analyse Human Resources (HR) metrics and employee performance to identify attrition drivers.
+Analyse Human Resources (HR) metrics and employee performance to identify attrition drivers.
 
 ### Key Findings
-- __Demographics:__ The majority of employees are between 20 and 29 years old, with a slightly higher proportion (2.7%) of women than men.
-- __Attrition:__ The overall attrition rate is 16.1% with Sales Representative roles experiencing the highest turnover.
-- __Performance:__ Managerial rating level and self-performance level do not always align. 
+- __Demographics:__ The majority of employees are between 20 and 29 years old, with a slightly higher proportion of women than men (2.7%).
+- __Attrition:__ The overall attrition rate is 16.1%, with Sales Representative roles experiencing the highest turnover.
+- __Performance:__ Managerial rating levels and self-performance levels do not always align.
 
 ### Recommendations
 
 - __Targeted retention programmes:__ Implement specific retention initiatives for departments with high turnover, such as Sales.
-- __Employee Satisfaction Initiatives:__ Enhance employee satisfaction through recognition programs, flexible work arrangements, and improved communication.
+- __Employee Satisfaction Initiatives:__ Enhance employee satisfaction through recognition programmes, flexible work arrangements, and improved communication.
 - __Managerial Development:__ Provide training and support to managers to improve their leadership skills and create a positive work environment.
 - __Compensation and Benefits Review:__ Regularly review compensation and benefits packages to ensure they remain competitive.
 
-By implementing these recommendations, Atlas Labs can significantly reduce employee turnover, improve morale, and enhance overall organisational performance.
+Conclusion: By implementing these recommendations, Atlas Labs can significantly reduce employee turnover, improve morale, and enhance overall organisational performance.
 
 ---
 
