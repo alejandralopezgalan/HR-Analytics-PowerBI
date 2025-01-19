@@ -145,42 +145,39 @@ The interactive elements of the Overview page in my Power BI report enable users
 
 
 <br/> _Demographics_ page includes key statistics such as:
-- Age Distribution: Ranges from 18 to 51 years old, with the majority being 20-29 years old (874 employees).
-- Marital Status: The largest group is single (624 employees, 42.45% of the total).
-- Gender Distribution: The majority are females between 30 and 39 years old.
-- Ethnicity: The highest number of employees are white, with an average salary around $110K.
+- Age Distribution: Employees range in age from 18 to 51 years old, with the majority (874 employees) being between 20 and 29 years old.
+- Marital Status: The largest group of employees is single, comprising 42.45% of the total (624 employees).
+- Gender Distribution: The majority of employees are females, particularly those between 30 and 39 years old.
+- Ethnicity: The highest number of employees identify as white, with an average salary of around $110K.
   
 ![demographics](assets/img/project1-demographics.png)
 
-The interactive elements of the Overview page in my Power BI report enable users to explore various metrics and trends related to employee attrition. These include:
-- Viewing the total number of employees and their status (active/inactive).
-- Exploring the distribution of employees by department and role.
-- Analysing the attrition rate and observing hiring trends over the years.
+The interactive features of the Demographics dashboard allow users to explore various demographic metrics in depth, providing detailed insights into employee data.
 
 ![demographics_gif](assets/img/project1_demographics_video.gif)
 
 <br/> _Performance Tracker_ is a page designed to visualise individual employee performance scores based on yearly performance reviews. The dashboard includes various elements such as:
-- KPIs: Key Performance Indicators of individual scores on different criteria such as job satisfaction, environment satisfaction, relationships satisfaction, and work-life balance across multiple years.
-- Review Records: Individual records of the start date (when the employee started working at the company), the date of the last review, and the due date for the next review.
-- Comparison Charts: Visual comparisons of self-performance metrics and those by their management.
+- KPIs: Key Performance Indicators of individual scores on different criteria such as job satisfaction, environment satisfaction, relationship satisfaction, and work-life balance across multiple years.
+- Review Records: Individual records including the start date (when the employee began working at the company), the date of the last review, and the due date for the next review
+- Comparison Charts: Visual comparisons of self-performance metrics and those evaluated by their managers.
 
 ![performance-tracker](assets/img/project1-performance.png)
 
-Users can select an individual employee to view their specific performance scores and review records in detail.
+Users can select an individual employee to view detailed performance scores and review records.
 
 ![performance-gif](assets/img/project1_performance_video.gif)
 
 <br/> _Attrition_ is a page that displays in-depth plots related to the company's attrition rate. The dashboard includes various elements such as:
-- Overall Attrition Rate: The overall percentage of employees leaving the company (16.1%).
-- Department and Job Role: Attrition rates segmented by different departments and job roles. The highest is Sales Representatives with 39.8%.
-- Travel Frequency: Attrition rates based on employees' travel frequency. The highest are frequent travellers with 24.9%.
-- Overtime Requirement: Attrition rates correlated with overtime work requirements. The highest (30.5%) for those with overtime requirements.
-- Attrition by Hire Date: Analysis of attrition rates by employee hire dates. 2020 was the year with the highest rate (22.0%).
-- Tenure: Breakdown of attrition rates based on employees' length of tenure at the company. The majority are employees with less than two years of tenure.
+- Overall Attrition Rate: The overall percentage of employees leaving the company, which is 16.1%.
+- Department and Job Role: Attrition rates segmented by different departments and job roles. Sales Representatives have the highest attrition rate at 39.8%.
+- Travel Frequency: Attrition rates based on employees' travel frequency. Frequent travellers have the highest attrition rate at 24.9%.
+- Overtime Requirement: Attrition rates related with overtime work requirements. Employees with overtime requirements have the highest attrition rate at 30.5%.
+- Attrition by Hire Date: Analysis of attrition rates by employee hire dates. The highest attrition rate was in 2020, at 22.0%.
+- Tenure: Breakdown of attrition rates based on employees' length of tenure at the company. The majority of attrition occurs among employees with less than two years of tenure.
 
 ![attrition](assets/img/project1-attrition.png)
 
-Users can interact with the dashboard to explore these metrics and gain detailed insights into employee turnover.
+Users can interact with the dashboard to delve into these metrics and gain comprehensive insights into employee turnover.
 
 ![attrition_gif](assets/img/project1_attrition_video.gif)
 
@@ -188,17 +185,17 @@ Users can interact with the dashboard to explore these metrics and gain detailed
 
 ## Results and Implications
 ### Demographics
-- The workforce is relatively young, with a majority of employees aged 20-29.
-- While there is a gender imbalance, the company has a diverse workforce in terms of ethnicity.
-- Employees who identify as white have the highest average salary, whereas mixed or multiple ethnic groups have one of the lowest average salaries
+- The workforce is relatively young, with the majority of employees aged 20-29.
+- Despite a gender imbalance, the company has a diverse workforce in terms of ethnicity.
+- Employees identifying as white have the highest average salary, whereas those from mixed or multiple ethnic groups have one of the lowest average salaries.
 
 ### Attrition:
-- The overall attrition rate of 16.1% is higher than industry benchmarks ([Onsight Global](https://insightglobal.com/blog/employee-attrition-rate-how-to-calculate-improve/)).
-- Sales and Sales Representative roles have significantly higher turnover rates, indicating potential issues with job satisfaction, work-life balance, or management.
-- Frequent travelers and overtime workers are most likely to resign, as they have the highest attrition rate.
+- The overall attrition rate is 16.1%, which is higher than industry benchmarks ([Onsight Global](https://insightglobal.com/blog/employee-attrition-rate-how-to-calculate-improve/)).
+- Sales and Sales Representative roles experience significantly higher turnover rates, indicating potential issues with job satisfaction, work-life balance, or management.
+- Frequent travellers and employees who work overtime are the most likely to resign, as they have the highest attrition rates.
 
 ### Performance:
-- A discrepancy between managerial ratings and self-performance ratings suggests potential misalignment in expectations or performance evaluation processes.
+- There is a discrepancy between managerial ratings and self-performance ratings, suggesting potential misalignment in expectations or performance evaluation processes.
 
 ### Implications:
 - High turnover rates can lead to increased costs, decreased productivity, and a negative impact on company culture.
