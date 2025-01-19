@@ -149,7 +149,10 @@ The interactive elements of the Overview page in my Power BI report allow users 
   
 ![demographics](assets/img/project1-demographics.png)
 
-The interactive features of the Demographics dashboard enable users to delve into various demographic metrics and gain detailed insights into employee data.
+The interactive elements of the Overview page in my Power BI report enable users to explore various metrics and trends related to employee attrition. These include:
+- Viewing the total number of employees and their status (active/inactive).
+- Exploring the distribution of employees by department and role.
+- Analysing the attrition rate and observing hiring trends over the years.
 
 ![demographics_gif](assets/img/project1_demographics_video.gif)
 
