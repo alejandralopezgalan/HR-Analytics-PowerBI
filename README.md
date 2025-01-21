@@ -257,10 +257,10 @@ Inactive_Employees_Date =
 <br />
 
 
-**17. `% Attrition Rate Date`** <br />
+**17. `% Attrition_Rate_Date`** <br />
 Calculates the attrition rates based on the number of inactive employees on specific dates.
 ```sql  
-% Attrition Rate Date =
+% Attrition_Rate_Date =
   DIVIDE([Inactive_Employees_Date], [TotalEmployeesDate])
 ```
 
