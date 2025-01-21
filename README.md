@@ -227,40 +227,40 @@ WorkLifeBalance =
 <br />
 
 
-**14. `Self_Rating`** <br />
+**14. `SelfRating`** <br />
 Calculates the highest rating of employee performance based on their own self-assessment.
 ```sql  
-Self_Rating =
+SelfRating =
   CALCULATE(MAX (FactPerformanceRating[SelfRating]),
     USERELATIONSHIP(FactPerformanceRating[SelfRating], DimRatingLevel[RatingID]))
 ```
 <br />
 
 
-**15. `Manager_Rating`** <br />
+**15. `ManagerRating`** <br />
 Calculates the highest rating of employee performance based on their manager’s assessment.
 ```sql  
-Manager_Rating =
+ManagerRating =
   CALCULATE(MAX(FactPerformanceRating[ManagerRating]),
     USERELATIONSHIP(FactPerformanceRating[ManagerRating], DimRatingLevel[RatingID]))
 ```
 <br />
 
 
-**16. `Inactive_Employees_Date`** <br />
+**16. `InactiveEmployeesDate`** <br />
 Quantifies the number of inactive employees on specific dates.
 ```sql  
-Inactive_Employees_Date =
+InactiveEmployeesDate =
   CALCULATE([InactiveEmployees],
     USERELATIONSHIP(DimDate[Date], DimEmployee[HireDate]))
 ```
 <br />
 
 
-**17. `% Attrition_Rate_Date`** <br />
+**17. `%AttritionRateDate`** <br />
 Calculates the attrition rates based on the number of inactive employees on specific dates.
 ```sql  
-% Attrition_Rate_Date =
+%AttritionRateDate =
   DIVIDE([Inactive_Employees_Date], [TotalEmployeesDate])
 ```
 
