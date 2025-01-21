@@ -107,6 +107,7 @@ TotalEmployees =
 ```
 <br />
 
+
 **2. `ActiveEmployees`** <br />
 Shows the count of employees who are currently employed and active in the company.
 ```sql  
@@ -115,6 +116,7 @@ ActiveEmployees =
     FILTER(DimEmployee, DimEmployee[Attrition] = "No"))
 ```
 <br />
+
 
 **3. `InactiveEmployees`** <br />
 Counts the number of employees who have left the company.
@@ -167,18 +169,18 @@ FullName =
 Displays the date of the most recent performance review for a selected employee.
 ```sql  
 LastReviewDate =
-  IF ( MAX ( FactPerformanceRating[ReviewDate] ) = BLANK(),
-    "No Review Yet", MAX ( FactPerformanceRating[ReviewDate] ))
+  IF (MAX (FactPerformanceRating[ReviewDate]) = BLANK(),
+    "No Review Yet", MAX(FactPerformanceRating[ReviewDate]))
 ```
 <br />
 
 
 **9. `NextReviewDate`** <br />
-Calculates the date for the next performance review, which should be 365 days after the `LastReviewDate`
+Calculates the date for the next performance review, which should be 365 days after the `LastReviewDate`.
 ```sql  
 NextReviewDate =
-  VAR review = IF ( MAX ( FactPerformanceRating[ReviewDate] ) = BLANK (),
-    MAX ( DimEmployee[HireDate] ),  MAX ( FactPerformanceRating[ReviewDate] ))
+  VAR review = IF(MAX(FactPerformanceRating[ReviewDate]) = BLANK (),
+    MAX(DimEmployee[HireDate]), MAX(FactPerformanceRating[ReviewDate] ))
 
   RETURN review + 365
 ```
@@ -186,7 +188,7 @@ NextReviewDate =
 
 
 **10. `JobSatisfaction`** <br />
-Shows the highest level of satisfaction employees have with their job roles
+Shows the highest level of satisfaction employees have with their job roles.
 ```sql  
 JobSatisfaction =
   MAX(FactPerformanceRating[JobSatisfaction])
@@ -195,67 +197,75 @@ JobSatisfaction =
 
 
 **11. `EnvironmentSatisfaction`** <br />
-Shows the highest rating of employees’ satisfaction with their work environment
+Shows the highest rating of employees’ satisfaction with their work environment.
 ```sql  
 EnvironmentSatisfaction =
-  CALCULATE ( MAX ( FactPerformanceRating[EnvironmentSatisfaction] ),
-    USERELATIONSHIP ( FactPerformanceRating[EnvironmentSatisfaction],
-    DimSatisfiedLevel[SatisfactionID] ) )
+  CALCULATE(MAX(FactPerformanceRating[EnvironmentSatisfaction]),
+    USERELATIONSHIP(FactPerformanceRating[EnvironmentSatisfaction],
+      DimSatisfiedLevel[SatisfactionID]))
 ```
 <br />
 
 
-**1. `TotalEmployees`** <br />
-Calculates the overall number of employees currently working at the company
+**12. `RelationshipSatisfaction`** <br />
+Estimates the highest level of satisfaction employees have with their relationships at work.
 ```sql  
-
+RelationshipSatisfaction =
+  CALCULATE(MAX(FactPerformanceRating[RelationshipSatisfaction]),
+    USERELATIONSHIP(FactPerformanceRating[RelationshipSatisfaction], DimSatisfiedLevel[SatisfactionID]))
 ```
 <br />
 
 
-
-**1. `TotalEmployees`** <br />
-Calculates the overall number of employees currently working at the company
+**13. `WorkLifeBalance`** <br />
+Measures the highest level of satisfaction employees have with their work-life balance.
 ```sql  
-
+WorkLifeBalance =
+  CALCULATE(MAX(FactPerformanceRating[WorkLifeBalance]),
+    USERELATIONSHIP(FactPerformanceRating[WorkLifeBalance], DimSatisfiedLevel[SatisfactionID])
 ```
 <br />
 
 
-
-**1. `TotalEmployees`** <br />
-Calculates the overall number of employees currently working at the company
+**14. `Self_Rating`** <br />
+Calculates the highest rating of employee performance based on their own self-assessment.
 ```sql  
-
+Self_Rating =
+  CALCULATE(MAX (FactPerformanceRating[SelfRating]),
+    USERELATIONSHIP(FactPerformanceRating[SelfRating], DimRatingLevel[RatingID]))
 ```
 <br />
 
 
-
-**1. `TotalEmployees`** <br />
-Calculates the overall number of employees currently working at the company
+**15. `Manager_Rating`** <br />
+Calculates the highest rating of employee performance based on their manager’s assessment.
 ```sql  
-
+Manager_Rating =
+  CALCULATE(MAX(FactPerformanceRating[ManagerRating]),
+    USERELATIONSHIP(FactPerformanceRating[ManagerRating], DimRatingLevel[RatingID]))
 ```
 <br />
 
 
- 
+**16. `Inactive_Employees_Date`** <br />
+Quantifies the number of inactive employees on specific dates.
+```sql  
+Inactive_Employees_Date =
+  CALCULATE([InactiveEmployees],
+    USERELATIONSHIP(DimDate[Date], DimEmployee[HireDate]))
+```
+<br />
 
- 
+
+**17. `% Attrition Rate Date`** <br />
+Calculates the attrition rates based on the number of inactive employees on specific dates.
+```sql  
+% Attrition Rate Date =
+  DIVIDE([Inactive_Employees_Date], [TotalEmployeesDate])
+```
 
 
- 
-
-
-RelationshipSatisfaction` | Estimates the highest level of satisfaction employees have with their relationships at work | `RelationshipSatisfaction = CALCULATE ( MAX (FactPerformanceRating[RelationshipSatisfaction] ), USERELATIONSHIP ( FactPerformanceRating[RelationshipSatisfaction] , DimSatisfiedLevel[SatisfactionID] ) )` |
-WorkLifeBalance` | Measures the highest level of satisfaction employees have with their work-life balance | `WorkLifeBalance = CALCULATE ( MAX (FactPerformanceRating[WorkLifeBalance]), USERELATIONSHIP ( FactPerformanceRating[WorkLifeBalance], DimSatisfiedLevel[SatisfactionID] ) ` |
-Self_Rating` | Calculates the highest rating of employee performance based on their own self-assessment | `Self_Rating = CALCULATE ( MAX (FactPerformanceRating[SelfRating] ), USERELATIONSHIP ( FactPerformanceRating[SelfRating] , DimRatingLevel[RatingID] ))` |
-Manager_Rating` | Calculates the highest rating of employee performance based on their manager’s assessment | `Manager_Rating = CALCULATE ( MAX (FactPerformanceRating[ManagerRating]), USERELATIONSHIP ( FactPerformanceRating[ManagerRating] , DimRatingLevel[RatingID] ))` |
-Inactive_Employees_Date` | Quantifies the number of inactive employees on specific dates | `Inactive_Employees_Date = CALCULATE( [InactiveEmployees], USERELATIONSHIP ( DimDate[Date], DimEmployee[HireDate] ))` |
-% Attrition Rate Date` | Calculates the attrition rates based on the number of inactive employees on specific dates | `% Attrition Rate Date = DIVIDE([Inactive_Employees_Date], [TotalEmployeesDate])` |
-
-### Data Analysis
+ ### Data Analysis
 - Exploratory Data Analysis (EDA): I used descriptive statistics and data visualisation to identify trends and patterns in the data.
 - Key Metrics: Analysed employee satisfaction, turnover rates, diversity indexes, and hiring trends.
 
