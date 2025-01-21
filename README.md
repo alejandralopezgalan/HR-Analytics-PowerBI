@@ -23,7 +23,7 @@ Image from [Freepik](https://www.freepik.com/search?format=search&last_filter=qu
   - [Tools and Techniques](#tools-and-techniques)
   - [Data Understanding](#data-understanding)
   - [Data Cleaning](#data-cleaning)
-  - [Data Transformation](#data-transformation)
+  - [Data Transformation and Modelling](#data-transformation-and-modelling)
   - [DAX measures](#dax-measures)
   - [Data Analysis](#data-analysis)
   - [Data Visualisation](#data-visualisation)
@@ -97,12 +97,27 @@ I created a new calculated date table using the DAX code from the [DimDate.txt](
 ![The final model](assets/img/project1-model-hr-powerbi.png)
 
 ### DAX measures
-Measures Table: I created a table containing all the necessary measures for the analysis, utilising DAX formulas to generate these measures.
+I created a table containing all the necessary measures for the analysis, utilising DAX formulas to generate these measures.
 
-| Measure | Description | DAX code |
-| :--- | --- | :--- |
-| `TotalEmployees` | Calculates the overall number of employees currently working at the company | `TotalEmployees = DISTINCTCOUNT(DimEmployee[EmployeeID])` |
-| `ActiveEmployees` | Shows the count of employees who are currently employed and active in the company | `ActiveEmployees = CALCULATE(COUNT(DimEmployee[EmployeeID]), FILTER(DimEmployee, DimEmployee[Attrition] = "No"))` |
+**1. `TotalEmployees`** <br />
+Calculates the overall number of employees currently working at the company
+```sql  
+TotalEmployees =
+  DISTINCTCOUNT(DimEmployee[EmployeeID])
+```
+<br />
+
+**1. `ActiveEmployees`** <br />
+Shows the count of employees who are currently employed and active in the company
+```sql  
+ActiveEmployees =
+  CALCULATE(COUNT(DimEmployee[EmployeeID]),
+    FILTER(DimEmployee, DimEmployee[Attrition] = "No"))
+```
+<br />
+
+
+
 | `InactiveEmployees` | Counts the number of employees who have left the company | `InactiveEmployees = CALCULATE(COUNT(DimEmployee[EmployeeID]), FILTER(DimEmployee, DimEmployee[Attrition] = "Yes"))` |
 | `% Attrition Rate` | Calculates the percentage of employees who have left the company relative to the total number of employees | `% Attrition Rate = DIVIDE([InactiveEmployees], [TotalEmployees])` |
 | `TotalEmployeesDate` | Displays the total count of employees on specific dates | `TotalEmployeesDate = CALCULATE([TotalEmployees], USERELATIONSHIP(DimDate[Date], DimEmployee[HireDate]))` |
