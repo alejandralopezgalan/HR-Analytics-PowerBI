@@ -100,15 +100,15 @@ I created a new calculated date table using the DAX code from the [DimDate.txt](
 I created a table containing all the necessary measures for the analysis, utilising DAX formulas to generate these measures.
 
 **1. `TotalEmployees`** <br />
-Calculates the overall number of employees currently working at the company
+Calculates the overall number of employees currently working at the company.
 ```sql  
 TotalEmployees =
   DISTINCTCOUNT(DimEmployee[EmployeeID])
 ```
 <br />
 
-**1. `ActiveEmployees`** <br />
-Shows the count of employees who are currently employed and active in the company
+**2. `ActiveEmployees`** <br />
+Shows the count of employees who are currently employed and active in the company.
 ```sql  
 ActiveEmployees =
   CALCULATE(COUNT(DimEmployee[EmployeeID]),
@@ -116,12 +116,71 @@ ActiveEmployees =
 ```
 <br />
 
+**3. `InactiveEmployees`** <br />
+Counts the number of employees who have left the company.
+```sql  
+InactiveEmployees =
+  CALCULATE(COUNT(DimEmployee[EmployeeID]),
+    FILTER(DimEmployee, DimEmployee[Attrition] = "Yes"))
+```
+<br />
 
 
-| `InactiveEmployees` | Counts the number of employees who have left the company | `InactiveEmployees = CALCULATE(COUNT(DimEmployee[EmployeeID]), FILTER(DimEmployee, DimEmployee[Attrition] = "Yes"))` |
-| `% Attrition Rate` | Calculates the percentage of employees who have left the company relative to the total number of employees | `% Attrition Rate = DIVIDE([InactiveEmployees], [TotalEmployees])` |
-| `TotalEmployeesDate` | Displays the total count of employees on specific dates | `TotalEmployeesDate = CALCULATE([TotalEmployees], USERELATIONSHIP(DimDate[Date], DimEmployee[HireDate]))` |
-| `AverageSalary` | Provides the average salary of all employees in the company | `AverageSalary = AVERAGE(DimEmployee[Salary])` |
+**4. `% Attrition Rate`** <br />
+Calculates the percentage of employees who have left the company relative to the total number of employees.
+```sql  
+% Attrition Rate =
+  DIVIDE([InactiveEmployees], [TotalEmployees])
+```
+<br />
+
+
+**5. `TotalEmployeesDate`** <br />
+Displays the total count of employees on specific dates
+```sql  
+TotalEmployeesDate =
+  CALCULATE([TotalEmployees],
+    USERELATIONSHIP(DimDate[Date], DimEmployee[HireDate]))
+```
+<br />
+
+
+**6. `AverageSalary`** <br />
+Provides the average salary of all employees in the company
+```sql  
+AverageSalary =
+  AVERAGE(DimEmployee[Salary])
+```
+<br />
+
+
+**1. `TotalEmployees`** <br />
+Calculates the overall number of employees currently working at the company
+```sql  
+T
+```
+<br />
+
+
+**1. `TotalEmployees`** <br />
+Calculates the overall number of employees currently working at the company
+```sql  
+
+```
+<br />
+
+
+**1. `TotalEmployees`** <br />
+Calculates the overall number of employees currently working at the company
+```sql  
+
+```
+<br />
+
+
+ 
+
+ 
 | `FullName` | Combines first names and last names to get the full name of each employee | `CONCATENATE(DimEmployee[FirstName], CONCATENATE(" ", DimEmployee[LastName]))` |
 | `LastReviewDate` | Displays the date of the most recent performance review for a selected employee | `LastReviewDate = IF ( MAX ( FactPerformanceRating[ReviewDate] ) = BLANK(), "No Review Yet", MAX ( FactPerformanceRating[ReviewDate] ))` |
 | `NextReviewDate` | Calculates the date for the next performance review, which should be 365 days after the `LastReviewDate` | `NextReviewDate = VAR review = IF ( MAX ( FactPerformanceRating[ReviewDate] ) = BLANK (), MAX ( DimEmployee[HireDate] ),  MAX ( FactPerformanceRating[ReviewDate] )) RETURN review + 365` |
