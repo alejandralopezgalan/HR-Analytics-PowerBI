@@ -35,7 +35,6 @@ Image from [Freepik](https://www.freepik.com/search?format=search&last_filter=qu
 - [Power BI Report](#power-bi-report)
 
 
----
 ## Executive Summary
 ### Primary Goal
 Analyse Human Resources (HR) metrics and employee performance to identify attrition drivers.
@@ -54,7 +53,6 @@ Analyse Human Resources (HR) metrics and employee performance to identify attrit
 
 Conclusion: By implementing these recommendations, Atlas Labs can significantly reduce employee turnover, improve morale, and enhance overall organisational performance.
 
----
 
 ## Introduction
 
@@ -66,7 +64,7 @@ Atlas Labs is facing a significant challenge with employee turnover, which is ne
 2. Develop targeted retention strategies to address these factors.
 3. Improve overall employee satisfaction and engagement.
 
----
+
 ## Methodology
 
 ### Data Source
@@ -294,8 +292,6 @@ Users can interact with the dashboard to delve into these metrics and gain compr
 
 ![attrition_gif](assets/img/project1_attrition_video.gif)
 
----
-
 ## Results and Implications
 ### Demographics
 - The workforce is relatively young, with the majority of employees aged 20-29.
@@ -313,8 +309,6 @@ Users can interact with the dashboard to delve into these metrics and gain compr
 ### Implications:
 - High turnover rates can lead to increased costs, decreased productivity, and a negative impact on company culture.
 - Addressing the root causes of attrition is essential for improving retention and creating a positive work environment.
-
----
 
 ## PowerBi Report
 To review the analysis in detail, you can download the Power BI Report [here](assets/report/Report-HR-analytics-in-PowerBI.pbix)
