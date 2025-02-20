@@ -32,7 +32,7 @@ Image from [Freepik](https://www.freepik.com/search?format=search&last_filter=qu
   - [Attrition](#attrition)
   - [Performance](#performance)
   - [Implications](#implications)
-- [Power BI File](#power-bi-file)
+- [Power BI Report](#power-bi-report)
 
 
 ---
@@ -316,6 +316,6 @@ Users can interact with the dashboard to delve into these metrics and gain compr
 
 ---
 
-## PowerBi File
-If you want to review the detailed analysis, you can download the Power BI file from [here](assets/report/Report-HR-analytics-in-PowerBI.pbix)
+## PowerBi Report
+To review the analysis in detail, you can download the Power BI Report [here](assets/report/Report-HR-analytics-in-PowerBI.pbix)
 
