@@ -238,11 +238,11 @@ Calculates the attrition rates based on the number of inactive employees on spec
 I created a report in Power BI to showcase the results of the analysis.
 
 _Overview_ provides a high-level summary of key metrics related to attrition at the company, including:
-- Total Employees: The overall number of employees (1470).
-- Active and Inactive Employees: Breakdown of currently active (1233) and inactive employees (237).
-- Employees by Department and Role: Distribution of active employees across different departments (Technology, Sales, and HR) and roles.
-- Attrition Rate: The percentage of employees leaving the company over a specific period (16.1%).
-- Hiring Trend by Year: The trend of employee hiring over the past years (2012 to 2022).
+- Total Employees: The organisation currently comprises 1,470 employees in total.
+- Active and Inactive Employees: Among the workforce, 1,233 employees are actively engaged, while 237 are classified as inactive, providing a clear picture of current operational capacity.
+- Employees by Department and Role: The distribution of active employees across departments highlights the dominance of the Technology department, with 828 employees. This is followed by Sales (354 employees) and Human Resources (51 employees), emphasising the structural composition of the workforce.
+- Attrition Rate: The current attrition rate stands at 16.1%, reflecting the proportion of employees leaving the organisation.
+- Hiring Trend by Year: An analysis of hiring trends over the past decade (2012 to 2022) reveals key insights, including the year 2016 as a period of the lowest employee retention. This trend underscores the dynamic relationship between hiring and attrition.
   
 ![overview](assets/img/project1-overview.png)
 
@@ -255,10 +255,10 @@ The interactive elements of the Overview page in my Power BI report enable users
 
 
 <br/> _Demographics_ page includes key statistics such as:
-- Age Distribution: Employees range in age from 18 to 51 years old, with the majority (874 employees) being between 20 and 29 years old.
-- Marital Status: The largest group of employees is single, comprising 42.45% of the total (624 employees).
-- Gender Distribution: The majority of employees are females, particularly those between 30 and 39 years old.
-- Ethnicity: The highest number of employees identify as white, with an average salary of around $110K.
+- Age Distribution: Employees range in age from 18 to 51 years, with the majority (874 employees) falling within the 20-29 age group. This highlights a workforce predominantly comprised of younger professionals.
+- Marital Status: The largest demographic by marital status is married (624 employees). This is followed by single employees (549) and those who are divorced (297).
+- Gender Distribution: The company’s workforce is predominantly female, with a significant concentration of women aged between 30 and 39 years. Gender representation across other age groups is evenly distributed.
+- Ethnicity: The majority of employees identify as white, with an average salary of approximately $115K. Other ethnic groups contribute to the company’s diversity, each with their respective salary averages.
   
 ![demographics](assets/img/project1-demographics.png)
 
@@ -279,11 +279,11 @@ Users can select an individual employee to view detailed performance scores and 
 
 <br/> _Attrition_ is a page that displays in-depth plots related to the company's attrition rate. The dashboard includes various elements such as:
 - Overall Attrition Rate: The overall percentage of employees leaving the company, which is 16.1%.
-- Department and Job Role: Attrition rates segmented by different departments and job roles. Sales Representatives have the highest attrition rate at 39.8%.
-- Travel Frequency: Attrition rates based on employees' travel frequency. Frequent travellers have the highest attrition rate at 24.9%.
-- Overtime Requirement: Attrition rates related with overtime work requirements. Employees with overtime requirements have the highest attrition rate at 30.5%.
+- Atrition by Job Role: Attrition rates segmented by different departments and job roles. Sales Representatives have the highest attrition rate at 39.8%.
+- Attrition by Travel Frequency: Attrition rates based on employees' travel frequency. Frequent travellers have the highest attrition rate at 24.9%.
 - Attrition by Hire Date: Analysis of attrition rates by employee hire dates. The highest attrition rate was in 2020, at 22.0%.
-- Tenure: Breakdown of attrition rates based on employees' length of tenure at the company. The majority of attrition occurs among employees with less than two years of tenure.
+- Attrition by Overtime Requirement: Attrition rates related with overtime work requirements. Employees with overtime requirements have the highest attrition rate at 30.5%.
+- Attrition by Tenure: Breakdown of attrition rates based on employees' length of tenure at the company. The majority of attrition occurs among employees with less than two years of tenure.
 
 ![attrition](assets/img/project1-attrition.png)
 
