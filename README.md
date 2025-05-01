@@ -301,7 +301,7 @@ Users can interact with the dashboard to delve into these metrics and gain compr
 
 ### Attrition:
 - The overall attrition rate is 16.1%, which is higher than industry benchmarks ([Onsight Global](https://insightglobal.com/blog/employee-attrition-rate-how-to-calculate-improve/)).
-- Sales and Sales Representative roles experience significantly higher turnover rates, indicating potential issues with job satisfaction, work-life balance, or management.
+- Sales Representative roles experience significantly higher turnover rates, indicating potential issues with job satisfaction, work-life balance, or management.
 - Frequent travellers and employees who work overtime are the most likely to resign, as they have the highest attrition rates.
 
 ### Performance:
