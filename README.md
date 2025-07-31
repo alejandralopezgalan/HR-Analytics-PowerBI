@@ -12,8 +12,8 @@ Image from [Freepik](https://www.freepik.com/search?format=search&last_filter=qu
 
 - [Executive Summary](#executive-summary)
   - [Primary Goal](#primary-goal)
-  - [Key Findings](#key-findings)
-  - [Recommendations and Plan of Action](#recommendations-and-plan-of-action)
+  - [Key Findings and Recommendations](#key-findings-and-recommendations)
+
 - [Introduction](#introduction)
   - [Business Problem](#business-problem)
   - [Goals](#goals)
@@ -38,22 +38,57 @@ Image from [Freepik](https://www.freepik.com/search?format=search&last_filter=qu
 ### Primary Goal
 Analyse Human Resources (HR) metrics and employee performance to identify attrition drivers.
 
-### Key Findings
-- The company has 1,470 employees, with 1,233 active and 237 inactive.  
-- The Technology department is the largest, followed by Sales and HR.
-- Attrition rate: 16.1%, with Sales Representatives experiencing the highest turnover (39.8%).
-- Frequent travelers, those hired in 2020, and employees working overtime have higher attrition rates.
-- The workforce is predominantly young (20-29), mostly married, and female-dominated.
-- White employees form the largest ethnic group, earning an average salary of $115K
+### Key Findings and Recommendations 
 
-### Recommendations and Plan of Action
-- **Tackle Sales Representative Turnover**: Examine the reasons behind the 39.8% attrition rate in Sales and introduce retention strategies such as enhanced pay structures, professional development initiatives, or improved workload management.
-- **Support Frequent Travellers**: Consider flexible working arrangements or travel incentives to reduce the 24.9% attrition rate among employees who travel frequently.
-- **Review Overtime Policies**: High attrition among employees required to work overtime (30.5%) suggests a need for better work-life balance measures, such as adjusted overtime pay or additional leave benefits.
-- **Retention Strategies for Younger Employees**: With the majority aged 20-29, focus on career progression opportunities and mentorship schemes to encourage long-term retention.
-- **Improve Inclusivity**: While white employees form the majority, further investment in diversity, equity, and inclusion (DEI) initiatives could strengthen workplace culture.
-- **Gender Balance Considerations**: With a female-majority workforce, assess leadership development programmes to ensure equal growth opportunities for all employees.
-
+<table>
+    <thead>
+        <tr>
+            <th>Finding</th>
+            <th>Recommendation</th>
+            <th>Plot</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>The company has 1,470 employees, with 1,233 active and 237 inactive.</td>
+            <td>Review inactive staff profiles to understand the underlying reasons and consider redeployment or re-engagement initiatives to maximise workforce efficiency.</td>
+            <td><img src="assets/img/project1_fiding1.png"></img></td>
+        </tr>
+        <tr>
+            <td>The Technology department is the largest, followed by Sales and HR.</td>
+            <td>Prioritise initiatives in Technology and foster collaboration with Sales and HR to align efforts and boost performance.</td>
+            <td><img src="assets/img/project1_fiding2.png"></img></td>
+        </tr>
+        <tr>
+	          <td>Attrition rate was 16.1%, with Sales Representatives experiencing the highest turnover (39.8%).</td>	
+            <td>Examine the reasons behind the 39.8% attrition rate in Sales and introduce retention strategies such as enhanced pay structures, professional development initiatives, or improved workload management.</td>
+            <td><img src="assets/img/project1_fiding3.png"></img></td>
+        </tr>
+	       <tr>
+            <td rowspan=2>Frequent travelers, those hired in 2020, and employees working overtime have higher attrition rates.</td>
+	          <td> Consider flexible working arrangements or travel incentives to reduce the 24.9% attrition rate among employees who travel frequently.</td>
+            <td><img src="assets/img/project1_fiding4.png"></img> </td>
+        </tr>
+	       <tr>
+            <td> High attrition among employees required to work overtime (30.5%) suggests a need for better work-life balance measures, such as adjusted overtime pay or additional leave benefits.</td>
+            <td><img src="assets/img/project1_fiding5.png"></img> </td>
+        </tr>
+	       <tr>
+            <td rowspan=2>The workforce is predominantly young (20-29), mostly married, and female-dominated.</td>
+	          <td>Focus on career progression opportunities and mentorship schemes to encourage long-term retention among young employees.</td>
+            <td><img src="assets/img/project1_fiding6.png"></img> </td>
+        </tr>
+        <tr>
+	          <td>With a female-majority workforce, assess leadership development programmes to ensure equal growth opportunities for all employees.</td>
+            <td><img src="assets/img/project1_fiding7.png"></img> </td>
+        </tr>
+          <tr>
+            <td>White employees form the largest ethnic group, earning an average salary of $115K.</td>
+	          <td>While white employees form the majority, further investment in diversity, equity, and inclusion (DEI) initiatives could strengthen workplace culture.</td>
+            <td><img src="assets/img/project1_fiding8.png"></img> </td>
+        </tr>
+    </tbody>
+</table> 
 
 ## Introduction
 
